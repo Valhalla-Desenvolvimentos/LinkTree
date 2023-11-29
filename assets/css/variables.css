@@ -1,0 +1,20 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição */
+
+.theme-light {
+  --color-primary: #05182c;
+  --color-background: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+.theme-dark {
+  --color-primary: #05182c;
+  --color-background: #2a2c2d;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+}
+
+/* escuro #05182c
+cinza-claro #c8e0e9
+azul-claro #34bfd3
+bluedark1 #1a5e78
+bluedark2 #2184a3 */

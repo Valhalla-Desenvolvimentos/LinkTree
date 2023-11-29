@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/index.css" rel="stylesheet">
+  <title>ValhallaDev Links</title>
+</head>
+
+<body>
+  <div class="container" id="site-container" class="site-container" style="display: none;">
+    <section>
+      <div class="conteudo">
+        <div class="logo">
+          <img src="./files/images/logo-white.svg" width="250" height="200">
+        </div>
+
+        <div class="informacao">
+          <p>Onde a tecnologia encontra a mitologia.</p>
+        </div>
+
+        <!-- Switch -->
+        <label id="switch" class="switch">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+        </label>
+
+        <div class="links">
+          <a href="https://github.com/Valhalla-Desenvolvimentos" target="_blank">
+            <div class="texto">
+              <h3>Github</h3>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/valhalla_dev_/" target="_blank">
+            <div class="texto">
+              <h3>Instagram</h3>
+            </div>
+          </a>
+          <a href="https://wa.me/5565999970475?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Valhalla%20Dev!"
+            target="_blank">
+            <div class="texto">
+              <h3>Whatsapp</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="hammer-container">
+
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+
+    <img src="./files/images/fundo.jpg" style="position: absolute;" width="500">
+    <img src="./files/images/martelo.png" style="position: absolute;">
+
+    <div class="wallpaper">
+      <img class="desktop-image" src="files/images/ok.jpeg" alt="Imagem Desktop">
+      <img class="mobile-image" src="files/images/ok-mobile.jpeg" alt="Imagem Mobile">
+    </div>
+  </div>
+
+
+  <audio id="thunderAudio" src="thunder.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
