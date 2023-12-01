@@ -18,7 +18,7 @@
   width: 100vw;
   height: 100vh;
   background: url("../../files/images/wallpaper.jpg");
-  filter: brightness(10%);
+  filter: brightness(4%);
   z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo principal */
 }
 
@@ -73,4 +73,19 @@ canvas {
 
 #canvas1 {
   z-index: 100;
+}
+
+.image-parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Ocupa 100% da largura da .wallpaper */
+  height: 100%; /* Ocupa 100% da altura da .wallpaper */
+}
+
+.image-parent img {
+  width: 100%;
+  height: 100%;
+  /* Adicione estilos adicionais conforme necessário */
 }

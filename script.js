@@ -44,7 +44,8 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById("site-container").style.display = "block";
   document.getElementById("site-container").classList.add("fade-in-site");
-}, 222000); // 4000 milissegundos = 4 segundos
+}, 1); // 4000 milissegundos = 4 segundos
+
 
 
 

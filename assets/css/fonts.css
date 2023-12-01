@@ -1,33 +1,13 @@
 /* Importação de fontes para usar no projeto */
 
 @font-face {
-  font-family: "SpaceGrotesk-Bold";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("../../../files/fonts/SpaceGrotesk-Bold.ttf") format("woff");
-}
-
-@font-face {
   font-family: "Norse";
-  font-weight: normal;
-  font-style: normal;
   font-display: swap;
-  src: url("../../../files/fonts/Norse-Bold.otf") format("woff");
+  src: url("../../../files/fonts/Norse.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "SpaceGrotesk-Medium";
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Norse-Bold";
   font-display: swap;
-  src: url("../../../files/fonts/SpaceGrotesk-Medium.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "SpaceGrotesk-SemiBold";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("../../../files/fonts/SpaceGrotesk-SemiBold.ttf") format("woff");
+  src: url("../../../files/fonts/Norse-Bold.otf") format("opentype");
 }
