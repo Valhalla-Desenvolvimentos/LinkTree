@@ -1,16 +1,14 @@
 /* Essas são as variáveis para usar no site e ficar mais escalável a edição */
 
 .theme-light {
-  --color-primary: #05182c;
-  --color-background: #fbfbfe;
-  --color-accent: #fd6f53;
   --font-color: #000000;
+  --background: url("../../files/images/diurno.jpg") center no-repeat;
+  --background-links: rgba(255, 255, 255, 0.56);
 }
 .theme-dark {
-  --color-primary: #05182c;
-  --color-background: #2a2c2d;
-  --color-accent: #12cdea;
-  --font-color: #ffffff;
+  --font-color: #fff;
+  --background: url("../../files/images/noturno.jpg") center no-repeat;
+  --background-links: rgba(0, 0, 0, 0.56);
 }
 
 /* escuro #05182c

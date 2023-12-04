@@ -9,58 +9,62 @@
 </head>
 
 <body>
-  <div class="container" id="site-container" class="site-container" style="display: none;">
+  <div class="container" id="site-container" style="display: none;">
     <section>
       <div class="conteudo">
         <div class="logo">
-          <img src="./files/images/logo-white.svg" width="250" height="200">
+          <img src="./files/images/logo.svg" width="250px">
         </div>
+        <div class="informacoes">
+          <div>
+            <p class="catchphrase">Onde a tecnologia encontra a mitologia.</p>
+          </div>
 
-        <div class="informacao">
-          <p>Onde a tecnologia encontra a mitologia.</p>
-        </div>
+          <!-- Switch -->
+          <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+          </label>
 
-        <!-- Switch -->
-        <label id="switch" class="switch">
-          <input type="checkbox" onchange="toggleTheme()" id="slider">
-          <span class="slider round"></span>
-        </label>
-
-        <div class="links">
-          <a href="https://github.com/Valhalla-Desenvolvimentos" target="_blank">
-            <div class="texto">
-              <h3>Github</h3>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/valhalla_dev_/" target="_blank">
-            <div class="texto">
-              <h3>Instagram</h3>
-            </div>
-          </a>
-          <a href="https://wa.me/5565999970475?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Valhalla%20Dev!"
-            target="_blank">
-            <div class="texto">
-              <h3>Whatsapp</h3>
-            </div>
-          </a>
+          <div class="links">
+            <a href="https://github.com/Valhalla-Desenvolvimentos" target="_blank">
+              <div class="texto">
+                <h3>Github</h3>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/valhalla_dev_/" target="_blank">
+              <div class="texto">
+                <h3>Instagram</h3>
+              </div>
+            </a>
+            <a href="https://wa.me/5565999970475?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Valhalla%20Dev!"
+              target="_blank">
+              <div class="texto">
+                <h3>Whatsapp</h3>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </div>
 
 
-  <div class="hammer-container">
+  <!-- <div class="hammer-container">
 
-    <!-- <canvas id="canvas1"></canvas> -->
-    <!-- <canvas id="canvas2"></canvas> -->
-    <!-- <canvas id="canvas3"></canvas> -->
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
 
-    <h3 style="position: absolute;">Embarque em uma Jornada Épica</h3>
+    <audio id="thunderAudio" src="thunder.mp3" preload="auto"></audio>
+
+
+    <h3>Embarque em uma Jornada Épica</h3>
 
     <h3>Aperte no Mjonir</h3>
 
     <div class="images-container">
-      <img src="./files/images/Fundooo.png" style="position: absolute; filter: blur(px);" width="800">
+      <img src="./files/images/Fundooo.png" style="position: absolute;">
       <img src="./files/images/martelo.png" style="position: absolute;">
     </div>
 
@@ -72,13 +76,12 @@
     <div class="wallpaper">
       <img class="desktop-image" src="files/images/teste3.jpg" alt="Imagem Desktop">
       <img class="mobile-image" src="files/images/ok-mobile.jpeg" alt="Imagem Mobile">
+
     </div>
-  </div>
 
 
-  <audio id="thunderAudio" src="thunder.mp3" preload="auto"></audio>
-  <script src="script.js"></script>
 
+  </div> -->
 
   <script src="./script.js"></script>
 </body>

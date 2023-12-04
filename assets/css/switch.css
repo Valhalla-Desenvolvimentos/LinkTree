@@ -6,14 +6,26 @@
   height: 34px;
 }
 
-/* Hide default HTML checkbox */
+#switch {
+  position: fixed;
+  top: 20px; /* Ajuste conforme necessário para a posição vertical */
+  right: 20px; /* Ajuste conforme necessário para a posição horizontal */
+  z-index: 1000; /* Certifique-se de que o switch esteja sobreposto a outros elementos */
+}
+
+@media screen and (max-width: 767px) {
+  #switch {
+    top: 10px;
+    right: 10px;
+  }
+}
+
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -21,7 +33,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #244646;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -38,25 +50,25 @@
   margin: auto 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 0 0px 15px #2020203d;
-  background: white url("https://i.ibb.co/FxzBYR9/night.png");
+  box-shadow: 0 0px 15px #04061e;
+  background: #0e4874 url("https://i.ibb.co/FxzBYR9/night.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #0e4874;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #244646;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url("https://i.ibb.co/7JfqXxB/sunny.png");
+  background: #244646 url("https://i.ibb.co/7JfqXxB/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
 }

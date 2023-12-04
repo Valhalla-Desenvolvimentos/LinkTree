@@ -2,14 +2,6 @@
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
   document.documentElement.className = themeName;
-
-  // Check the theme and set the logo accordingly
-  const logoImage = document.querySelector(' .conteudo img');
-  if (themeName === 'theme-dark') {
-    logoImage.src = './files/images/logo-white.svg';
-  } else {
-    logoImage.src = './files/images/logo-dark.svg';
-  }
 }
 
 // function to toggle between light and dark theme
@@ -33,8 +25,6 @@ function toggleTheme() {
 })();
 
 
-// ... Seu código anterior ...
-
 // Aguarde dois segundos e, em seguida, exiba o trovão
 setTimeout(function () {
   document.getElementById("thunderAudio").play();
@@ -42,7 +32,7 @@ setTimeout(function () {
 
 // Aguarde quatro segundos e, em seguida, exiba o contêiner do site
 setTimeout(function () {
-  document.getElementById("site-container").style.display = "block";
+  document.getElementById("site-container").style.display = "flex";
   document.getElementById("site-container").classList.add("fade-in-site");
 }, 1); // 4000 milissegundos = 4 segundos
 

@@ -4,5 +4,6 @@
 @import "./fonts.css";
 @import "./home-storm.css";
 @import "./variables.css";
-@import "./styles.css";
+@import "./links.css";
+@import "./normalize.css";
 @import "./switch.css";
