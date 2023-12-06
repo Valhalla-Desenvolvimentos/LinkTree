@@ -5,9 +5,3 @@
   font-display: swap;
   src: url("../../../files/fonts/Norse.otf") format("opentype");
 }
-
-@font-face {
-  font-family: "Norse-Bold";
-  font-display: swap;
-  src: url("../../../files/fonts/Norse-Bold.otf") format("opentype");
-}

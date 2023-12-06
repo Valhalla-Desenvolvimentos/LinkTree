@@ -1,9 +1,7 @@
 /* Global */
 
-@import "./animations.css";
 @import "./fonts.css";
-@import "./home-storm.css";
 @import "./variables.css";
-@import "./links.css";
+@import "./home.css";
 @import "./normalize.css";
 @import "./switch.css";

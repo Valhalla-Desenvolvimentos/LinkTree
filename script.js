@@ -1,10 +1,10 @@
-// function to set a given theme/color-scheme
+// Switch
+
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
   document.documentElement.className = themeName;
 }
 
-// function to toggle between light and dark theme
 function toggleTheme() {
   if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-light');
@@ -13,7 +13,6 @@ function toggleTheme() {
   }
 }
 
-// Immediately invoked function to set the theme on initial load
 (function () {
   if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-dark');
@@ -23,22 +22,6 @@ function toggleTheme() {
     document.getElementById('slider').checked = true;
   }
 })();
-
-
-// Aguarde dois segundos e, em seguida, exiba o trovão
-setTimeout(function () {
-  document.getElementById("thunderAudio").play();
-}, 2000); // 2000 milissegundos = 2 segundos
-
-// Aguarde quatro segundos e, em seguida, exiba o contêiner do site
-setTimeout(function () {
-  document.getElementById("site-container").style.display = "flex";
-  document.getElementById("site-container").classList.add("fade-in-site");
-}, 1); // 4000 milissegundos = 4 segundos
-
-
-
-
 
 /* credits to https://codepen.io/Nvagelis/pen/yaQGrL */
 /* Check my github :D : https://github.com/aymks */

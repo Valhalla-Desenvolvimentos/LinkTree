@@ -8,9 +8,9 @@
 
 #switch {
   position: fixed;
-  top: 20px; /* Ajuste conforme necessário para a posição vertical */
-  right: 20px; /* Ajuste conforme necessário para a posição horizontal */
-  z-index: 1000; /* Certifique-se de que o switch esteja sobreposto a outros elementos */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 767px) {
