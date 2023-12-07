@@ -212,12 +212,13 @@ footer p {
 
 .drop {
   position: absolute;
+  overflow: hidden;
   z-index: 20000;
-  bottom: 100%;
+  bottom: 100vh;
   width: 10px;
   height: 120px;
   pointer-events: none;
-  animation: drop 0.5s linear 500; /* Modificado para 1 iteração */
+  animation: drop 0.5s linear infinite; /* Modificado para 1 iteração */
 }
 
 @keyframes drop {
