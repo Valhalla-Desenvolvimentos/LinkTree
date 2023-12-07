@@ -15,7 +15,7 @@
 
 section {
   position: relative;
-  top: 15%;
+  top: 8%;
 }
 
 .container::before {
@@ -34,7 +34,7 @@ section {
   color: var(--font-color);
   font-family: Norse, sans-serif;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   animation: neonHeartbeat 2s alternate-reverse infinite;
 }
 
@@ -88,10 +88,18 @@ section {
   }
 }
 
+.conteudo {
+  display: grid;
+  gap: 50px;
+  box-shadow: 0 0 10px rgb(20, 20, 20);
+  padding: 50px;
+}
+
 .conteudo .links {
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
 }
 
 .conteudo .links a {
@@ -100,46 +108,51 @@ section {
   border-radius: 50px;
   margin: 10px 0 0 0;
   transition: all 0.3s;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
 }
 
 .conteudo .links a:nth-child(1) :hover {
-  background: linear-gradient(
-    266.42deg,
-    rgb(32, 34, 37) 0%,
-    rgb(41, 44, 47) 100%
-  );
+  background: linear-gradient(266.42deg, #202225 0%, #292c2f 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
 .conteudo .links a:nth-child(2) :hover {
-  background: linear-gradient(
-    266.42deg,
-    rgb(195, 29, 121) 0%,
-    rgb(238, 139, 53) 100%
-  );
+  background: linear-gradient(266.42deg, #c31d79 0%, #ee8b35 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
 .conteudo .links a:nth-child(3) :hover {
-  background: linear-gradient(
-    266.42deg,
-    rgb(27, 134, 51) 0%,
-    rgb(40, 167, 69) 100%
-  );
+  background: linear-gradient(266.42deg, #1b8633 0%, #28a745 100%);
+  color: #fff;
+  transition: 2ms ease-in-out;
+}
+
+.conteudo .links a:nth-child(4) :hover {
+  background: linear-gradient(86.42deg, #f94e4f 0%, #c42122 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
 .conteudo .links .texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Norse, sans-serif;
   font-weight: bold;
-  color: var(--font-color);
+  color: var(--font-color-links);
   border-radius: 50px;
-  text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 1rem;
+}
+
+.conteudo .links .texto img {
+  margin-right: 5px;
+}
+
+.conteudo .links a:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .texto {
@@ -184,11 +197,12 @@ footer {
   bottom: 0;
   border-radius: 8px;
   margin-bottom: 10px;
+  box-shadow: 0 0 10px rgb(20, 20, 20);
 }
 
 footer p {
   font-family: Norse, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--font-color);
 }
