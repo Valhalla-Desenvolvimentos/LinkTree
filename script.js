@@ -37,7 +37,7 @@ var rainthroughnum = 10;
 var speedRainTrough = 15;
 var RainTrough = [];
 
-var rainnum = 100;
+var rainnum = 50;
 var rain = [];
 
 var lightning = [];
@@ -75,10 +75,10 @@ function createRainTrough() {
     RainTrough[i] = {
       x: random(0, w),
       y: random(0, h),
-      length: Math.floor(random(1, 830)),
+      length: Math.floor(random(1, 200)),
       opacity: Math.random() * 0.2,
       xs: random(-2, 2),
-      ys: random(10, 20)
+      ys: random(10, 10)
     };
   }
 }
@@ -89,8 +89,8 @@ function createRain() {
       x: Math.random() * w,
       y: Math.random() * h,
       l: Math.random() * 1,
-      xs: -4 + Math.random() * 4 + 2,
-      ys: Math.random() * 10 + 10
+      xs: -4 + Math.random() * 2 + 1,
+      ys: Math.random() * 5 + 5
     };
   }
 }
@@ -104,13 +104,13 @@ function createLightning() {
     single = {
       x: x,
       y: y,
-      xRange: random(5, 30),
-      yRange: random(10, 25),
+      xRange: random(5, 15),
+      yRange: random(10, 15),
       path: [{
         x: x,
         y: y
       }],
-      pathLimit: random(40, 55)
+      pathLimit: random(20, 30)
     };
     lightning.push(single);
   }
