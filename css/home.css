@@ -46,7 +46,7 @@ section {
     transform: scale(1);
   }
   100% {
-    text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.7),
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 50px rgba(0, 123, 255, 0.7),
       0 0 60px rgba(0, 123, 255, 0.7);
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
@@ -97,24 +97,38 @@ section {
 .conteudo .links a {
   width: 100%;
   background-color: var(--background-links);
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 10px 0 0 0;
   transition: all 0.3s;
 }
 
 .conteudo .links a:nth-child(1) :hover {
-  background-color: #1d2e44;
+  background: linear-gradient(
+    266.42deg,
+    rgb(32, 34, 37) 0%,
+    rgb(41, 44, 47) 100%
+  );
+  color: #fff;
   transition: 2ms ease-in-out;
 }
 
 .conteudo .links a:nth-child(2) :hover {
-  background-color: #cd329c;
-  border-radius: 20px;
+  background: linear-gradient(
+    266.42deg,
+    rgb(195, 29, 121) 0%,
+    rgb(238, 139, 53) 100%
+  );
+  color: #fff;
   transition: 2ms ease-in-out;
 }
 
 .conteudo .links a:nth-child(3) :hover {
-  background-color: #1d9f4d;
+  background: linear-gradient(
+    266.42deg,
+    rgb(27, 134, 51) 0%,
+    rgb(40, 167, 69) 100%
+  );
+  color: #fff;
   transition: 2ms ease-in-out;
 }
 
@@ -122,7 +136,7 @@ section {
   font-family: Norse, sans-serif;
   font-weight: bold;
   color: var(--font-color);
-  border-radius: 20px;
+  border-radius: 50px;
   text-align: center;
   font-size: 1.3rem;
   padding: 1rem;
@@ -163,24 +177,20 @@ section {
 
 footer {
   background-color: var(--background-links);
-  color: white;
-  padding: 20px;
+  color: #fff;
+  padding: 18px;
   text-align: center;
   position: absolute;
   bottom: 0;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 footer p {
   font-family: Norse, sans-serif;
   font-size: 1.5rem;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  font-weight: 600;
+  color: var(--font-color);
 }
 
 /* --------------------- Canvas ------------------ */
