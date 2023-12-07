@@ -288,3 +288,11 @@ footer p {
     transform: scale(1.5);
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .drop,
+  .stem,
+  .splat {
+    display: none;
+  }
+}
