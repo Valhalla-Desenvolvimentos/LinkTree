@@ -33,11 +33,11 @@ var ctx1 = canvas1.getContext('2d');
 var ctx2 = canvas2.getContext('2d');
 var ctx3 = canvas3.getContext('2d');
 
-var rainthroughnum = 500;
+var rainthroughnum = 10;
 var speedRainTrough = 15;
 var RainTrough = [];
 
-var rainnum = 500;
+var rainnum = 100;
 var rain = [];
 
 var lightning = [];

@@ -111,25 +111,25 @@ section {
   box-shadow: 0 0 10px rgb(10, 10, 10);
 }
 
-.conteudo .links a:nth-child(1) :hover {
+.conteudo .links a:nth-child(1):hover {
   background: linear-gradient(266.42deg, #202225 0%, #292c2f 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
-.conteudo .links a:nth-child(2) :hover {
+.conteudo .links a:nth-child(2):hover {
   background: linear-gradient(266.42deg, #c31d79 0%, #ee8b35 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
-.conteudo .links a:nth-child(3) :hover {
+.conteudo .links a:nth-child(3):hover {
   background: linear-gradient(266.42deg, #1b8633 0%, #28a745 100%);
   color: #fff;
   transition: 2ms ease-in-out;
 }
 
-.conteudo .links a:nth-child(4) :hover {
+.conteudo .links a:nth-child(4):hover {
   background: linear-gradient(86.42deg, #f94e4f 0%, #c42122 100%);
   color: #fff;
   transition: 2ms ease-in-out;
