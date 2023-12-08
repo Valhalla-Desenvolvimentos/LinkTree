@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/home.css" rel="stylesheet" async>
   <link rel="icon" href="./files/images/logo.ico" type="image/x-icon">
 
   <title>ValhallaDev Links</title>
@@ -16,7 +16,17 @@
       <div class="conteudo">
 
         <div class="logo">
-          <img src="./files/images/logo.png" width="250px">
+          <picture>
+            <!-- Para telas com largura de viewport menor ou igual a 767 pixels -->
+            <source media="(max-width: 799px)" srcset="./files/images/logo-small.png">
+
+            <!-- Para telas com largura de viewport maior que 767 pixels -->
+            <source media="(min-width: 800px)" srcset="./files/images/logo.png">
+
+            <!-- Imagem padrão para navegadores que não suportam srcset -->
+            <img src="./files/images/logo.webp" alt="Logo">
+          </picture>
+
         </div>
 
         <div class="informacoes">
@@ -25,7 +35,7 @@
           </div>
 
           <!-- Switch -->
-          <label id="switch" class="switch">
+          <label id="switch" class="switch" for="slider" aria-label="slider">
             <input type="checkbox" onchange="toggleTheme()" id="slider">
             <span class="slider round"></span>
           </label>
@@ -33,26 +43,26 @@
           <div class="links">
             <a href="https://github.com/Valhalla-Desenvolvimentos" target="_blank">
               <div class="texto">
-                <img src="files/images/github.svg">
+                <img src="files/images/github.svg" alt="Github logo" width="18" height="18">
                 <h3>Github</h3>
               </div>
             </a>
             <a href="https://www.instagram.com/valhalla_dev_/" target="_blank">
               <div class="texto">
-                <img src="files/images/instagram.svg">
+                <img src="files/images/instagram.svg" alt="Instagram logo" width="18" height="18">
                 <h3>Instagram</h3>
               </div>
             </a>
             <a href="https://wa.me/5565999970475?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Valhalla%20Dev!"
               target="_blank">
               <div class="texto">
-                <img src="files/images/whatsapp.svg">
+                <img src="files/images/whatsapp.svg" alt="Whatsapp logo" width="18" height="18">
                 <h3>Whatsapp</h3>
               </div>
             </a>
             <a href="mailto:valhalla.desenvolvimentos@gmail.com">
               <div class="texto">
-                <img src="files/images/email.svg">
+                <img src="files/images/email.svg" alt="E-mail logo" width="18" height="18">
                 <h3>E-mail</h3>
               </div>
             </a>
@@ -68,14 +78,9 @@
     </footer>
   </div>
 
-  <!-- Audio -->
-  <audio controls autoplay style="display: none;" loop>
-    <source src="./files/sounds/vikings-valhalla.mp3" type="audio/mp3">
-  </audio>
-
   <div class="rain"></div>
 
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
 
 </html>

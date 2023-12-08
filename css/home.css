@@ -1,3 +1,23 @@
+/* Normalize */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Home */
+
 .container {
   display: flex;
   height: 100vh;
@@ -13,11 +33,6 @@
   margin-top: -50px;
 }
 
-section {
-  position: relative;
-  top: 8%;
-}
-
 .container::before {
   content: "";
   position: absolute;
@@ -25,7 +40,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url("../../files/images/wallpaper.jpg");
+  background: url("../../files/images/wallpaper.webp");
   filter: brightness(10%);
   z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo principal */
 }
@@ -34,7 +49,6 @@ section {
   color: var(--font-color);
   font-family: Norse, sans-serif;
   font-weight: bold;
-  font-size: 1.3rem;
   animation: neonHeartbeat 2s alternate-reverse infinite;
 }
 
@@ -88,12 +102,16 @@ section {
   }
 }
 
+section {
+  position: relative;
+  top: 8%;
+}
+
 .conteudo {
   display: grid;
   gap: 50px;
   box-shadow: 0 0 10px rgb(20, 20, 20);
-  padding: 50px 30px;
-  margin: 0 20px;
+  border-radius: 40px;
 }
 
 .conteudo .links {
@@ -139,9 +157,6 @@ section {
   font-family: Norse, sans-serif;
   font-weight: bold;
   color: var(--font-color-links);
-  border-radius: 50px;
-  font-size: 1.2rem;
-  padding: 1rem;
 }
 
 .conteudo .links .texto:hover {
@@ -192,7 +207,7 @@ section {
 footer {
   background-color: var(--background-links);
   color: #fff;
-  padding: 18px;
+  padding: 15px;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -289,10 +304,200 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .drop,
-  .stem,
-  .splat {
-    display: none;
+@font-face {
+  font-family: "Norse";
+  font-display: swap;
+  src: url("../../../files/fonts/Norse.otf") format("opentype");
+}
+
+/* Variables */
+
+.theme-light {
+  --font-color: #000;
+  --font-color-links: #575757;
+  --background: url("../../files/images/diurno.webp") center no-repeat;
+  --background-links: rgba(255, 255, 255, 0.56);
+}
+.theme-dark {
+  --font-color: #fff;
+  --font-color-links: #ffffff9c;
+  --background: url("../../files/images/noturno.webp") center no-repeat;
+  --background-links: rgba(0, 0, 0, 0.7);
+}
+
+/* Switch */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+  #switch {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #244646;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #04061e;
+  background: #0e4874 url("https://i.ibb.co/FxzBYR9/night.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider {
+  background-color: #0e4874;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #244646;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: #244646 url("https://i.ibb.co/7JfqXxB/sunny.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 320px) {
+  section {
+    top: 0%;
+  }
+
+  .conteudo {
+    margin: 70px 20px 20px 20px;
+    padding: 30px 30px;
+  }
+
+  .container .catchphrase {
+    font-size: 1rem;
+  }
+
+  .conteudo .links .texto {
+    font-size: 0.75rem;
+    padding: 0.7rem;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  section {
+    top: 4%;
+  }
+
+  .container .catchphrase {
+    font-size: 1rem;
+  }
+
+  .conteudo .links .texto {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    top: 0%;
+  }
+
+  .conteudo {
+    margin: 60px 20px 20px 20px;
+    padding: 40px 40px;
+  }
+
+  .container .catchphrase {
+    font-size: 1.4rem;
+  }
+
+  .conteudo .links .texto {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .conteudo {
+    margin: 40px 20px 20px;
+  }
+
+  .container .catchphrase {
+    font-size: 1.6rem;
+  }
+
+  .conteudo .links .texto {
+    font-size: 1.4rem;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .container .catchphrase {
+    font-size: 1.8rem;
   }
 }

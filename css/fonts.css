@@ -1,7 +1,0 @@
-/* Importação de fontes para usar no projeto */
-
-@font-face {
-  font-family: "Norse";
-  font-display: swap;
-  src: url("../../../files/fonts/Norse.otf") format("opentype");
-}
