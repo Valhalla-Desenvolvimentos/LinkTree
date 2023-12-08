@@ -418,6 +418,10 @@ input:checked + .slider:before {
     top: 0%;
   }
 
+  .rain {
+    display: none;
+  }
+
   .conteudo {
     margin: 70px 20px 20px 20px;
     padding: 30px 30px;
@@ -456,11 +460,20 @@ input:checked + .slider:before {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 500px) {
   section {
     top: 0%;
   }
+  .container .catchphrase {
+    font-size: 1.2rem;
+  }
 
+  .logo picture img {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
   .conteudo {
     margin: 60px 20px 20px 20px;
     padding: 40px 40px;
@@ -480,6 +493,10 @@ input:checked + .slider:before {
   }
 }
 @media only screen and (min-width: 1020px) {
+  .rain {
+    display: block;
+  }
+
   .conteudo {
     margin: 40px 20px 20px;
   }
